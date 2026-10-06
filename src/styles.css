@@ -200,3 +200,41 @@ h1 { font-size: 27px; margin: 2px 0; letter-spacing: -.03em; }
   .summaryGrid { grid-template-columns:1fr; }
   .summaryItem { display:flex; justify-content:space-between; align-items:center; }
 }
+.balanceHint { margin-top: 12px; font-size: 11px; opacity: .88; }
+.balanceHint strong { font-size: 12px; }
+.receiveCheck { display:flex; align-items:center; gap:8px; margin-top:10px; font-size:12px; color:#475569; }
+.receiveCheck input { width:17px; height:17px; margin:0; accent-color:#2563eb; }
+.dark .receiveCheck { color:#cbd5e1; }
+.creditCard { margin-bottom:18px; }
+.creditSummary { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin-top:13px; }
+.creditSummary span { background:#f8fafc; border-radius:12px; padding:10px; font-size:11px; color:#64748b; }
+.creditSummary strong { display:block; color:#172033; font-size:14px; margin-top:3px; }
+.dark .creditSummary span { background:#0f172a; color:#94a3b8; }
+.dark .creditSummary strong { color:#f8fafc; }
+.creditList { display:grid; gap:8px; margin:10px 0; }
+.credit { display:flex; align-items:center; gap:10px; background:#f8fafc; border:1px solid #e7ebf0; border-radius:15px; padding:11px; min-width:0; }
+.dark .credit { background:#0f172a; border-color:#334155; }
+.credit.received { background:#f0fdf4; border-color:#bbf7d0; }
+.dark .credit.received { background:#13261b; border-color:#166534; }
+.creditIcon { width:30px; height:30px; flex-shrink:0; border-radius:10px; display:grid; place-items:center; background:#dcfce7; color:#15803d; }
+.creditAmount { color:#15803d; }
+.dark .creditAmount { color:#86efac; }
+.modalHelp { color:#64748b; font-size:12px; line-height:1.45; margin:4px 0 2px; }
+.dark .modalHelp { color:#94a3b8; }
+.modalCheck { margin-top:13px; }
+@media (max-width: 390px) {
+  .creditSummary { grid-template-columns:1fr; }
+}
+
+.historyCard { margin-top: 18px; }
+.emptyHistory { margin-top: 12px; padding: 14px; border-radius: 12px; background: #f8fafc; color: #64748b; font-size: 12px; }
+.dark .emptyHistory { background: #0f172a; color: #94a3b8; }
+.historyList { display: grid; gap: 8px; margin-top: 12px; }
+.historyRow { display:flex; align-items:center; justify-content:space-between; gap:12px; padding:11px 12px; border:1px solid #e7ebf0; border-radius:13px; background:#f8fafc; }
+.dark .historyRow { background:#0f172a; border-color:#334155; }
+.historyRow > div { min-width:0; }
+.historyRow strong { display:block; font-size:12px; overflow-wrap:anywhere; }
+.historyRow span { display:block; margin-top:3px; color:#64748b; font-size:10px; }
+.dark .historyRow span { color:#94a3b8; }
+.dateField { display:flex; align-items:center; gap:8px; }
+.dateField input { margin-top:10px; }
