@@ -1,49 +1,22 @@
-# Build My Finance Tracker APK without Android Studio
+# My Finance Tracker – Cloud APK Build
 
-You do not need Android Studio on your computer.
+This version adds:
+- Add, edit and delete payments
+- Add, edit and delete money received / credits
+- Paid/Pending checkbox for every payment
+- Paid date saved automatically when you tick Paid
+- Payment History section for the selected month
+- Driver Payments category with Car 2 ₹17,000 due 5th and Car 4 ₹16,000 due 2nd
+- Monthly maintenance rows for all four cars
+- Existing v2 local data is preserved and migrated with the new driver/maintenance rows
+- Android build uses Java 21
 
-## 1. Create a GitHub repository
+## GitHub Actions
+1. Upload/replace the project files in your `my-finance-tracker` GitHub repository.
+2. Commit to the `main` branch.
+3. Open **Actions** → **Build Android APK**.
+4. Open the successful run.
+5. Under **Artifacts**, download `MyFinanceTracker-debug-apk`.
+6. Extract the ZIP and install `app-debug.apk` on Android.
 
-Create a new repository on GitHub, for example:
-
-`my-finance-tracker`
-
-## 2. Upload this project
-
-Upload all files and folders from this project to the GitHub repository.
-
-Make sure `.github/workflows/build-apk.yml` is uploaded too.
-
-## 3. Start the cloud build
-
-On GitHub:
-
-1. Open the repository.
-2. Select **Actions**.
-3. Select **Build Android APK**.
-4. Click **Run workflow**.
-5. Wait for the workflow to finish successfully.
-
-GitHub will build the Android APK using its cloud runner. Android Studio is not required on your PC.
-
-## 4. Download the APK
-
-Open the completed workflow run and find **Artifacts**.
-
-Download:
-
-`MyFinanceTracker-debug-apk`
-
-Extract the ZIP and you will find:
-
-`app-debug.apk`
-
-## 5. Install on your phone
-
-Send `app-debug.apk` to your Android phone, open it, and allow installation when Android asks.
-
-After installation, the app can be used daily. Your finance data is stored locally on the device.
-
-### Important
-
-This workflow uses Node.js 20 and Java 17 in the cloud, so your current local Node.js 16 installation does not prevent the cloud build.
+No Android Studio is required.
