@@ -1,0 +1,1 @@
+Place app icons here if you want custom branding. Capacitor Android icons can be generated with Android Studio/Image Asset Studio.
