@@ -5,7 +5,7 @@ A mobile-first personal finance tracker built with React, TypeScript and Capacit
 ## Features
 
 - Monthly income
-- Car loan tracking
+- loan tracking
 - Credit card tracking
 - Gold loan tracking
 - Add/edit/delete payments
